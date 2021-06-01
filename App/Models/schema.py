@@ -2,6 +2,7 @@ import graphene
 from graphene.relay import Node
 from graphene_mongo import MongoengineConnectionField, MongoengineObjectType
 from models import User as UserModel
+# from user import User as UserModel
 from models import Article as ArticleModel
 from models import Ticker as TickerModel
 from models import Image as ImageModel
@@ -35,6 +36,8 @@ class Query(graphene.ObjectType):
 
     # def resolve_users(self, args, info):
     #     print(User(username='bob'))
+    # def resolve_users(self, info):
+    # 	return list(UserModel.objects.all())
 
 schema = graphene.Schema(query=Query, types= [User])
 # Query.resolve_users()
