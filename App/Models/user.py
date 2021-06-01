@@ -8,7 +8,6 @@ from mongoengine.fields import (
     IntField,
 )
 
-
 class User(Document):
     meta = {"collection": "user"}
     username = StringField()

@@ -15,8 +15,13 @@ client = connect(
 def init_db():
     joe = User(username='joe', password='password', article_ids=[], ticker_ids=[])
     joe.save()
+    hank = User(username='hank', password='password', article_ids=[], ticker_ids=[])
+    hank.save()
+    kitty = User(username='kitty', password='password', article_ids=[], ticker_ids=[])
+    kitty.save()
+    erich = User(username='erich', password='password', article_ids=[], ticker_ids=[])
+    erich.save()
 
-print(client)
 
 
 # def init_db():

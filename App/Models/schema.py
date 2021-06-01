@@ -5,6 +5,8 @@ from models import User as UserModel
 from models import Article as ArticleModel
 from models import Ticker as TickerModel
 from models import Image as ImageModel
+from pdb import set_trace as bp
+
 
 class User(MongoengineObjectType):
     class Meta:
@@ -23,8 +25,7 @@ class Image(MongoengineObjectType):
         model = ImageModel
 
 class Query(graphene.ObjectType):
-
-    users = graphene.Field(User)
+    users = graphene.List(User)
     # articles = graphene.List(Article)
     # tickers = graphene.List(Ticker)
     # images = graphene.List(Image)
@@ -35,5 +36,5 @@ class Query(graphene.ObjectType):
     # def resolve_users(self, args, info):
     #     print(User(username='bob'))
 
-schema=graphene.Schema(query=Query, types= [UserModel])
+schema = graphene.Schema(query=Query, types= [User])
 # Query.resolve_users()
