@@ -37,14 +37,6 @@ class Query(graphene.ObjectType):
     # tickers = graphene.List(Ticker)
     # images = graphene.List(Image)
 
-    # def resolve_users(self, info,firstname):
-    #     return list(UserModel.objects.all(firstname))
-
-    # def resolve_users(self, args, info):
-    #     print(User(username='bob'))
-    # def resolve_users(self, info):
-    # 	return list(UserModel.objects.all())
-
 schema = graphene.Schema(query=Query)
 
 

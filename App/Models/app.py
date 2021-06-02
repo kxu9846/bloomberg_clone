@@ -8,14 +8,14 @@ from pdb import set_trace as bp
 
 app = Flask(__name__)
 
-# default_query = '''
-# {
-#   users {
-#     id
-#     username
-#   }
-# }
-# '''.strip()
+default_query = '''
+{
+  users {
+    id
+    username
+  }
+}
+'''.strip()
 
 app.add_url_rule(
     '/graphql',

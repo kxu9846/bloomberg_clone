@@ -1,0 +1,26 @@
+{
+  "name": "bloomberg_clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Client/App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kxu9846/bloomberg_clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kxu9846/bloomberg_clone/issues"
+  },
+  "homepage": "https://github.com/kxu9846/bloomberg_clone#readme",
+  "dependencies": {
+    "@apollo/client": "^3.3.19",
+    "graphql": "^15.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
