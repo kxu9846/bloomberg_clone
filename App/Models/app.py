@@ -1,19 +1,21 @@
-# from database import init_db
+
 from flask import Flask
 from flask_graphql import GraphQLView
 from schema import schema
 from database import init_db
+from pdb import set_trace as bp
+
 
 app = Flask(__name__)
 
-default_query = '''
-{
-  users {
-    id
-    username
-  }
-}
-'''.strip()
+# default_query = '''
+# {
+#   users {
+#     id
+#     username
+#   }
+# }
+# '''.strip()
 
 app.add_url_rule(
     '/graphql',
@@ -21,5 +23,6 @@ app.add_url_rule(
 )
 
 if __name__ == '__main__':
-    init_db()
-    app.run()
+
+  init_db()
+  app.run()

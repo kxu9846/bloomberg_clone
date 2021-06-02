@@ -14,8 +14,6 @@ from ticker import Ticker
 from image import  Image
 
 
-print(User)
-
 # class Game(Document):
 
 #     meta = {"collection": "game"}
