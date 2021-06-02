@@ -1,7 +1,7 @@
 import graphene
 from graphene_mongo import MongoengineObjectType
 # from models import User as UserModel
-from user import User as UserModel
+from Models.user import User as UserModel
 # from models import Article as ArticleModel
 # from models import Ticker as TickerModel
 # from models import Image as ImageModel
