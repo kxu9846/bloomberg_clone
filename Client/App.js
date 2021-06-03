@@ -1,6 +1,8 @@
 import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink, from } from "@apollo/client"
 import { onError } from "@apollo/client/link/error"
 import GetUsers from "./Components/getUsers"
+import React from "react"
+import ReactDOM from "react-dom"
 
 const errorLink = onError(({ graphqlErrors, networkError }) => {
     if (graphqlErrors) {
@@ -23,13 +25,22 @@ const client = new ApolloClient({
 
 function App() {
     return <ApolloProvider client={client}>
+        <span>hello?????</span>
         <GetUsers />
     </ApolloProvider>
 }
 
 export default App
 
+// const App = () => {
+//     return (
+//         <div>
+//             <span>react connected!!</span>
+//         </div>
+//     )
+// }
+
 ReactDOM.render(
-    App,
+    <App />,
     document.getElementById('app')
   );
