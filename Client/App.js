@@ -1,6 +1,6 @@
 import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink, from } from "@apollo/client"
 import { onError } from "@apollo/client/link/error"
-import GetUsers from "./Components/getUsers"
+import GetUsers from "./Components/GetUsers"
 import React from "react"
 import ReactDOM from "react-dom"
 

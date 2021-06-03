@@ -1,11 +1,61 @@
+// {
+//     "compilerOptions": {
+//       "outDir": "DIRECTORY",
+//       "noImplicitAny": true,
+//       "module": "es6",
+//       "target": "es5",
+//       "jsx": "react",
+//       "allowJs": true,
+//       "moduleResolution": "node",
+//       "allowUmdGlobalAccess": true,
+//       "esModuleInterop": true,
+//       "skipLibCheck": true,
+//       "forceConsistentCasingInFileNames": true,
+//       "preserveConstEnums": true,
+//       "typeRoots": ["node_modules/@types", "node_modules"],
+//       "types": ["react", "react-dom", "lodash"]
+//     },
+//     "include": ["./Client/Components/*.tsx"],
+//     "exclude": ["node_modules", "**/*.spec.ts"]
+// }
+
 {
-    "compilerOptions": {
-      "outDir": "./dist/",
-      "noImplicitAny": true,
-      "module": "es6",
-      "target": "es5",
-      "jsx": "react",
-      "allowJs": true,
-      "moduleResolution": "node",
-    }
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "es6",
+      "es2017",
+      "esnext.asynciterable"
+    ],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "baseUrl": "."
+  },
+    "files": [
+      "./Client/Components/GetUsers.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./Client/Components/*.tsx",
+    "./Client/Components/*.tsx"
+  ]
 }

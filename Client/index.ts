@@ -1,9 +1,9 @@
-import * as from 'lodash';
+// import * as  from 'lodash';
 
 function component() {
     const element = document.createElement('div');
 
-    element.innerHTML = .join(['Hello', 'webpack'], ' ');
+    element.innerHTML = "hello world!"
 
     return element;
 }
