@@ -6,24 +6,38 @@
     "@apollo/client": "^3.3.19",
     "@types/react": "^17.0.9",
     "@types/react-dom": "^17.0.6",
+    "concurrently": "^6.2.0",
+    "cross-fetch": "^3.1.4",
     "graphql": "^15.5.0",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
     "ts-loader": "^9.2.2",
-    "typescript": "^4.3.2",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.170"
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/lodash": "^4.14.170",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "tsc": "tsc -w"
+    "tsc": "tsc -w",
+    "start": "python3 App/app.py",
+    "Client": "node dist/App.js",
+    "dev": "concurrently \"npm run Client\" \npm run start\""
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "babel": {
+    "presets": [
+      "@babel/preset-typescript"
+    ]
+  }
 }

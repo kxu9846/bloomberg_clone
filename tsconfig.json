@@ -1,24 +1,3 @@
-// {
-//     "compilerOptions": {
-//       "outDir": "DIRECTORY",
-//       "noImplicitAny": true,
-//       "module": "es6",
-//       "target": "es5",
-//       "jsx": "react",
-//       "allowJs": true,
-//       "moduleResolution": "node",
-//       "allowUmdGlobalAccess": true,
-//       "esModuleInterop": true,
-//       "skipLibCheck": true,
-//       "forceConsistentCasingInFileNames": true,
-//       "preserveConstEnums": true,
-//       "typeRoots": ["node_modules/@types", "node_modules"],
-//       "types": ["react", "react-dom", "lodash"]
-//     },
-//     "include": ["./Client/Components/*.tsx"],
-//     "exclude": ["node_modules", "**/*.spec.ts"]
-// }
-
 {
   "compilerOptions": {
     "target": "es6",
@@ -29,6 +8,7 @@
       "es2017",
       "esnext.asynciterable"
     ],
+    "jsx": "react-jsx",
     "sourceMap": true,
     "outDir": "./dist",
     "moduleResolution": "node",
@@ -56,6 +36,8 @@
   ],
   "include": [
     "./Client/Components/*.tsx",
-    "./Client/Components/*.tsx"
+    "./Client/Components/*.ts",
+    "./Client/*.tsx",
+    "./Client/*.ts"
   ]
 }

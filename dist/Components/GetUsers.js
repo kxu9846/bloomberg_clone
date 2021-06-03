@@ -3,9 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("react/jsx-runtime");
 const react_1 = require("react");
 const client_1 = require("@apollo/client");
-const Queries_1 = require("../GraphQL/Queries");
+const Queries_1 = require("../GraphQl/Queries");
 function GetUsers() {
-    const { error, loading, data } = client_1.useQuery(Queries_1.LOAD_USERS);
+    const { data } = client_1.useQuery(Queries_1.LOAD_USERS);
     react_1.useEffect(() => {
         console.log(data);
     }, data);
