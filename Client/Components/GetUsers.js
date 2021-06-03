@@ -9,7 +9,11 @@ function GetUsers() {
         console.log(data)
     }, data)
 
-    return(<div></div>)
+    return (<div>
+        <span>
+            This is get users component
+        </span>
+    </div>)
 }
 
 export default GetUsers
