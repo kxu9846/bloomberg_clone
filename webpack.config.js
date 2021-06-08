@@ -12,7 +12,7 @@ module.exports = {
 
     // file resolutions
     resolve: {
-        extensions: [ '.ts', '.js' ],
+        extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
     },
 
     // loaders

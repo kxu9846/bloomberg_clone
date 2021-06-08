@@ -1,16 +1,17 @@
 
 from flask import Flask, render_template
 from flask_graphql import GraphQLView
+from flask_cors import CORS
 from schema import schema
 from database import init_db
 from pdb import set_trace as bp
 
 app = Flask(__name__)
+CORS(app)
+# @app.route("/")
 
-@app.route("/")
-
-def home():
-  return render_template("index.html")
+# def home():
+#   return render_template("index.html")
 
 # default_query = '''
 # {
@@ -27,6 +28,5 @@ app.add_url_rule(
 )
 
 if __name__ == '__main__':
-
-  init_db()
+  # init_db()
   app.run()

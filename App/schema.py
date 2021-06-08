@@ -5,7 +5,7 @@ from Models.user import User as UserModel
 # from models import Article as ArticleModel
 # from models import Ticker as TickerModel
 # from models import Image as ImageModel
-# from pdb import set_trace as bp
+from pdb import set_trace as bp
 import json
 from mongoengine import connect
 
@@ -39,7 +39,6 @@ class Query(graphene.ObjectType):
 
 schema = graphene.Schema(query=Query)
 
-
 # res = schema.execute(
 #     '''
 #         {
@@ -53,6 +52,5 @@ schema = graphene.Schema(query=Query)
 # print(UserModel.objects)
 # print(res.errors)
 # print(json.dumps(res.data))
-
 
 # Query.resolve_users()
