@@ -1,15 +1,15 @@
 import React from 'react';
-import { useQuery, gql } from '@apollo/client';
-// import gql from "graphql-tag"
-// import {Query} from "react-apollo"
+import { useQuery } from '@apollo/client';
+import { FETCH_USERS } from './Graphql/Queries'
 
-const FETCH_USERS = gql`
-  {
-    users {
-      username
-    }
-  }
-`
+// const FETCH_USERS = gql`
+//   {
+//     users {
+//       id,
+//       username
+//     }
+//   }
+// `
 // interface user {
 //   loading: boolean
 // }
@@ -22,15 +22,18 @@ function App() {
   const {loading, error, data} = useQuery(FETCH_USERS)
   // if (loading) return "Loading..."
   // if (error) return `Error! ${error.message}`
-  let users 
-  if (data) users = data.users
+  // let users 
+  // if (data) users = data.users
+  let users = !data ? null : data.users
   return (
     <ul>
-      {users.map((user:any) => (
-        <li>
+      {users ?
+        users.map((user: any) => (
+        <li key = {user.id}>
           {user.username}
         </li>
-      ))}
+        )) :
+      <span>no users found</span>}
     </ul>
   )
 }
