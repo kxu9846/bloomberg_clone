@@ -1,0 +1,26 @@
+{
+  "name": "bloomberg_clone",
+  "version": "1.0.0",
+  "description": "a bloomberg clone",
+  "main": "Client/src/index.tsx",
+  "scripts": {
+    "install-frontend": "npm install --prefix frontend",
+    "start-backend": "python3 App/app.py",
+    "start-frontend": "npm start --prefix Client",
+    "start-storybook": "npm run storybook --prefix Client",
+    "start-dev": "concurrently \"npm run start-frontend\" \"npm run start-backend\" \"npm run start-storybook\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kxu9846/bloomberg_clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kxu9846/bloomberg_clone/issues"
+  },
+  "homepage": "https://github.com/kxu9846/bloomberg_clone#readme",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
