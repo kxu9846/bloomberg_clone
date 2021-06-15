@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ApolloClient, InMemoryCache, createHttpLink, ApolloProvider, ApolloLink } from '@apollo/client'
-import {onError} from "@apollo/client/link/error"
+import { onError } from "@apollo/client/link/error"
 // import {ApolloLink} from "apollo-link"
 
 // const cache = new InMemoryCache({
