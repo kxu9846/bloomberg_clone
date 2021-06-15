@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ApolloClient, InMemoryCache, createHttpLink, ApolloProvider, ApolloLink } from '@apollo/client'
 import { onError } from "@apollo/client/link/error"
+import QuickLinksBar from './QuickLinksBar'
 // import {ApolloLink} from "apollo-link"
 
 // const cache = new InMemoryCache({
@@ -26,7 +27,8 @@ const client = new ApolloClient({
 
 function Root() {
   return (
-    <ApolloProvider client = {client}>
+    <ApolloProvider client={client}>
+      <QuickLinksBar />
       <App />
     </ApolloProvider>
   )

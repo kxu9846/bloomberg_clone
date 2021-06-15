@@ -1,0 +1,21 @@
+.div {
+    display: flex;
+    font-family: "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    margin: auto;
+    width: 70%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.item {
+    color: black
+}
+
+.item:hover {
+    color: grey;
+    cursor: grabbing
+  }
