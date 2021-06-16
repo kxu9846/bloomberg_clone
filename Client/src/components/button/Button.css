@@ -1,0 +1,13 @@
+.button {
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primary {background-color: blue}
+.secondary {background-color: red;}
+
