@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { ApolloClient, InMemoryCache, createHttpLink, ApolloProvider, ApolloLink } from '@apollo/client'
 import { onError } from "@apollo/client/link/error"
-// import {ApolloLink} from "apollo-link"
+import { BrowserRouter } from 'react-router-dom'
 
 // const cache = new InMemoryCache({
 //   dataIdFromObject: object => object._id || null
@@ -25,7 +25,9 @@ const client = new ApolloClient({
 function Root() {
   return (
     <ApolloProvider client = {client}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </ApolloProvider>
   )
 }

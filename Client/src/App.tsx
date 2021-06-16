@@ -1,23 +1,22 @@
 import React from 'react';
-import { useQuery } from '@apollo/client';
-import { FETCH_USERS } from './Graphql/Queries'
+import {Route, Switch, Redirect} from 'react-router-dom'
+import Navbar from './components/navbar/Navbar'
+// import { useQuery } from '@apollo/client';
+// import { FETCH_USERS } from './Graphql/Queries'
 
 function App() {
-  const {loading, error, data} = useQuery(FETCH_USERS)
+  // const {loading, error, data} = useQuery(FETCH_USERS)
   // if (loading) return "Loading..."
   // if (error) return `Error! ${error.message}`
 
-  let users = !data ? null : data.users
+  // let users = !data ? null : data.users
   return (
-    <ul>
-      {users ?
-        users.map((user: any) => (
-        <li key = {user.id}>
-            {user.username}
-          </li>
-        )) :
-      <span>no users found</span>}
-    </ul>
+    <div>
+      <Switch>
+        <Route path = "/" component = {Navbar} />
+        <Redirect to = "/" />
+      </Switch>
+    </div>
   )
 }
 
