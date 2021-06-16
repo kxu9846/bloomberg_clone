@@ -1,3 +1,4 @@
+import { Story, Meta} from '@storybook/react'
 import React from 'react'
 import Button from '../components/button/Index'
 
@@ -16,7 +17,7 @@ export const Secondary = () =>
         Secondary
     </Button>
 
-const Template = (args: any) => <Button {...args} />
+const Template : Story = (args:any) => <Button {...args} />
 
 export const PrimaryA = Template.bind({})
 PrimaryA.args = {
@@ -34,4 +35,16 @@ export const SecondaryA = Template.bind({})
 SecondaryA.args = {
     variant: 'secondary',
     children: 'Secondary Args'
+}
+
+export const BorderButton = Template.bind({})
+BorderButton.args = {
+    variant: 'border',
+    children: 'Subscribe'
+}
+
+export const LinkButton = Template.bind({})
+LinkButton.args = {
+    variant: 'link',
+    children: 'Sign In'
 }

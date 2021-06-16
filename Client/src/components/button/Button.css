@@ -1,7 +1,7 @@
 .button {
     border: none;
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     text-align: center;
     font-size: 12px;
     border-radius: 5px;
@@ -11,3 +11,21 @@
 .primary {background-color: blue}
 .secondary {background-color: red;}
 
+.border {
+    background-color: black;
+    font-family: "Gill Sans", sans-serif;
+}
+.border:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black
+}
+
+.link {
+    color: black;
+    background-color: white;
+}
+
+.link:hover {
+    color: grey
+}
