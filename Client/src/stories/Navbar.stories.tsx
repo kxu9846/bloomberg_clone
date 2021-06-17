@@ -8,8 +8,7 @@ export default {
 
 export const PrimaryNavbar = () => (
     <div>
-        
-        <Primary/>
+        <Primary />
         <Secondary/>
     </div>
 )

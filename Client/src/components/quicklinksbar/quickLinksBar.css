@@ -1,0 +1,13 @@
+.div {
+    display: flex;
+    font-family: "Arial";
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    margin: auto;
+    width: 80%;
+}
+
+.title {
+    font-weight: bold;
+}

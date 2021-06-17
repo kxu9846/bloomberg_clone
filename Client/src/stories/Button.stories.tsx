@@ -17,6 +17,16 @@ export const Secondary = () =>
         Secondary
     </Button>
 
+export const Border = () =>
+    <Button variant = "border">
+        Border
+    </Button>
+
+export const Link = () =>
+    <Button variant = "link">
+        Link
+    </Button>
+
 const Template : Story = (args:any) => <Button {...args} />
 
 export const PrimaryA = Template.bind({})

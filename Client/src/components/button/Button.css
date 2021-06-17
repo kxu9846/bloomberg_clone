@@ -9,6 +9,7 @@
 }
 
 .primary {background-color: blue}
+
 .secondary {background-color: red;}
 
 .border {
@@ -22,8 +23,11 @@
 }
 
 .link {
+    display: flex;
     color: black;
     background-color: white;
+    text-transform: uppercase;
+
 }
 
 .link:hover {
