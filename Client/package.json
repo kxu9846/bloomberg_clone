@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.3.19",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@storybook/builder-webpack4": "^6.2.9",
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",

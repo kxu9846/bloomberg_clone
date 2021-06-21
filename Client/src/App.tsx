@@ -1,7 +1,8 @@
 import React from 'react';
 import {Route, Switch, Redirect} from 'react-router-dom'
-import Navbar from './components/navbar/Navbar'
+// import Navbar from './components/navbar/index'
 import QuickLinksBar from './components/quicklinksbar/QuickLinksBar'
+import Homepage from './Pages/Homepage/Homepage'
 // import { useQuery } from '@apollo/client';
 // import { FETCH_USERS } from './Graphql/Queries'
 
@@ -15,7 +16,7 @@ function App() {
     <div>
       <Switch>
         <Route path = "/quicklinksbar"><QuickLinksBar /></Route>
-        <Route path="/" component={Navbar} />
+        <Route path="/" component={Homepage} />
         <Redirect to = "/" />
       </Switch>
     </div>

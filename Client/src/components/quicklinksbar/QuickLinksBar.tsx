@@ -16,7 +16,6 @@ const quickLinksProps = [
     'Wealth'
 ]
 
-
 function QuickLinksBar() {
     return (
         <div className="div">

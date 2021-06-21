@@ -4,6 +4,7 @@ import './Button.css'
 interface props {
     variant: string
     children: string
+    rest: JSX.IntrinsicElements
 }
 
 function Button(props: props) {
@@ -12,6 +13,7 @@ function Button(props: props) {
     return (
         <button className = {`button ${variant}`} {...rest}>
             {children}
+            {rest}
         </button>
     )
 }
