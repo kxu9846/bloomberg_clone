@@ -15,7 +15,6 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route path = "/quicklinksbar"><QuickLinksBar /></Route>
         <Route path="/" component={Homepage} />
         <Redirect to = "/" />
       </Switch>

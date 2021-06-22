@@ -1,0 +1,31 @@
+.main-navbar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-navbar-header-left {
+    display:flex;
+    flex-direction: row;
+    padding: 1px 7px; 
+}
+
+.main-navbar-header-right {
+    display:flex;
+    flex-direction: row;
+    padding: 1px 7px; 
+}
+
+@media (max-width: 75em) {
+    .quicklinks {
+        visibility: hidden;
+    }
+}
+
+.main-content-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    width: 300px;
+}

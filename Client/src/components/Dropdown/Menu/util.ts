@@ -4,7 +4,8 @@
 //     "Technology",
 // ]
 
-export const options = {
+
+export const options: any = {
     "Home": 
         [
             [
@@ -33,47 +34,61 @@ export const options = {
             ]
         ]
     ,
-    "Markets": {
-        "Read": [
-            "Economics",
-            "Deals",
-            "ETFs",
-            "Alternate Investing",
-            "American Investing",
-        ],
-        "Follow": [
-            "Facebook",
-            "Github",
-            "Linkedin",
-            "Twitter"
-        ],
-        "Data": [
-            "Stocks",
-            "Currencies",
-            "Commodities",
-            "Sectors",
-            "Rates and Bonds",
+    "Markets": [
+        [
+            [
+                [
+                    "Economics",
+                    "Deals",
+                    "ETFs",
+                    "Alternate Investing",
+                    "American Investing",
+                ], "Read"
+            ],
+            [
+                [
+                    "Facebook",
+                    "Github",
+                    "Linkedin",
+                    "Twitter"
+                ],"Follow"
+            ],
+            [
+                [
+                    "Stocks",
+                    "Currencies",
+                    "Commodities",
+                    "Sectors",
+                    "Rates and Bonds",
+                ], "Data"
+            ]
         ]
-    },
-    "Technology": {
-        "Read": [
-            "Start Ups",
-            "Work Shift",
-            "AI",
-            "Mobile",
-            "Big Data",
-            "US",
-            "Cloud Computing"
+    ],
+    "Technology": [
+        [
+            [
+                "Start Ups",
+                "Work Shift",
+                "AI",
+                "Mobile",
+                "Big Data",
+                "US",
+                "Cloud Computing"
+            ], "Read"
         ],
-        "Follow": [
-            "Facebook",
-            "Github",
-            "Linkedin",
-            "Twitter"
+        [
+            [
+                "Facebook",
+                "Github",
+                "Linkedin",
+                "Twitter"
+            ], "Follow"
         ],
-        "Special Reports": [
-            "Elon Musk",
-            "Apple"
+        [
+            [
+                "Elon Musk",
+                "Apple"
+            ], "Special Reports"
         ]
-    },
+    ],
 }

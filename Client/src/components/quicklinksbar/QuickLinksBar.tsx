@@ -12,16 +12,16 @@ const quickLinksProps = [
     'Fixed Income',
     'ETFs',
     'Sectors',
-    'Wactchlist',
+    'Watchlist',
     'Wealth'
 ]
 
 function QuickLinksBar() {
     return (
-        <div className="div">
-            <div className = "title">QuickLinks:</div>
+        <div className="quicklinks">
+            <div className = "quicklinks-title">Quick Links:</div>
             {quickLinksProps.map((item: any) => (
-                <div key={item} className="item">
+                <div key={item} className="quicklinks-item">
                     <LinkButton variant = "link" children= {item} />
                 </div>
             ))}

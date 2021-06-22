@@ -1,13 +1,12 @@
-.div {
+.quicklinks {
     display: flex;
-    font-family: "Arial";
-    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
     align-items: center;
     text-transform: uppercase;
-    margin: auto;
-    width: 80%;
+    font-size: 12px;
 }
 
-.title {
-    font-weight: bold;
+.quicklinks-title {
+    font-weight: 700;
+    white-space: nowrap;
 }

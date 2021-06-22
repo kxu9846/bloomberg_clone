@@ -1,6 +1,6 @@
 import { Story} from '@storybook/react'
 import React from 'react'
-import Button from '../components/button/Index'
+import Button from '../components/Button/index'
 
 export default {
     title: 'Button',

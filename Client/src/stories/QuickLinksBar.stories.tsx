@@ -1,6 +1,5 @@
 import React from 'react'
-// import {BorderButton, LinkButton, Border, Link} from './Button.stories'
-
+import {BorderButton, LinkButton, Border, Link} from './Button.stories'
 
 export default {
     title: "Quick Links Bar"
@@ -8,9 +7,9 @@ export default {
 
 export const QuickLinksBar = () => (
     <div>
-        {/* <Border />
+        <Border />
         <Link />
         <BorderButton variant= "border" children= "Border Button" />
-        <LinkButton variant= "link" children = "Link Button" /> */}
+        <LinkButton variant= "link" children = "Link Button" />
     </div>
 )
