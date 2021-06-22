@@ -11,5 +11,5 @@ from mongoengine.fields import (
 
 class Ticker(Document):
     meta = {"collection": "ticker"}
-    name: StringField()
-    symbol: StringField()
+    name = StringField()
+    symbol = StringField()
