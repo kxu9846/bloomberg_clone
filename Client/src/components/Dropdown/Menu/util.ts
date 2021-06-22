@@ -34,7 +34,8 @@ export const options: any = {
             ]
         ]
     ,
-    "Markets": [
+    "Markets": 
+    
         [
             [
                 [
@@ -51,7 +52,7 @@ export const options: any = {
                     "Github",
                     "Linkedin",
                     "Twitter"
-                ],"Follow"
+                ], "Follow"
             ],
             [
                 [
@@ -63,7 +64,7 @@ export const options: any = {
                 ], "Data"
             ]
         ]
-    ],
+    ,
     "Technology": [
         [
             [

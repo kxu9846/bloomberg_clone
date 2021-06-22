@@ -1,6 +1,6 @@
 import {Story} from '@storybook/react'
 import React from 'react'
-import DropdownButton from '../components/DropdownButton/index'
+import DropdownButton from '../../components/DropdownButton/index'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 

@@ -12,9 +12,9 @@ export default function DropdownOption({variant, dropDownOption} : props) {
             {options[dropDownOption].map((category: any) => {
                 const categoryName = category[1]
                 return (
-                    <div key = {categoryName}>
-                        <span>{categoryName}</span>
-                        <ul>
+                    <div key = {categoryName} className = "dropdownoption-div">
+                        <ul className = "dropdownoption-ul">
+                            <span className = "dropdownoption-categoryname">{categoryName}</span>
                             {category[0].map((categoryOption: string) => (
                                 <li>
                                     {categoryOption}

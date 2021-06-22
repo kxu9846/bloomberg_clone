@@ -1,0 +1,23 @@
+.dropdownoption {
+    font-family: sans-serif;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 500px;
+    height: 350px;
+}
+
+.dropdownoption-div {
+    width: 250px;
+    height: fit-content;
+    white-space: nowrap;
+}
+
+.dropdownoption-categoryname {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.dropdownoption-ul {
+    list-style-type: none;
+}

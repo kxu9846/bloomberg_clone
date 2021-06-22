@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import './reset.css'
 import { ApolloClient, InMemoryCache, createHttpLink, ApolloProvider, ApolloLink } from '@apollo/client'
 import { onError } from "@apollo/client/link/error"
 import { BrowserRouter } from 'react-router-dom'
