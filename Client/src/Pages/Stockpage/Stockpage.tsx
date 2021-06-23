@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react'
 import './Stockpage.css'
 import axios from 'axios'
 
+const SYMBOL = "AAPL"
+const TOKEN = "Tpk_ebd4f6717994459ca8761830bd54e946"
+const API_URL = `https://sandbox.iexapis.com/stable/stock/${SYMBOL}/quote/?token=${TOKEN}`
+
 interface props {
     symbol : string
 }
-
-const SYMBOL = "AAPL"
-const TOKEN = "pk_c22b341d1ed4455c9d82f2c28cf214aa"
-const API_URL = `https://cloud.iexapis.com/stable/stock/${SYMBOL}/quote/?token=${TOKEN}`
 
 function Stockpage(props: props) {
     const [financials, setFinancials] = useState(
@@ -26,6 +26,7 @@ function Stockpage(props: props) {
     const getData = async () => {
         let result = await axios.get(API_URL)
             .then(result => {
+                console.log(result.data)
                 setFinancials({
                     companySymbol: result.data.symbol,
                     companyName: result.data.companyName,
@@ -44,8 +45,12 @@ function Stockpage(props: props) {
     }
 
     useEffect(() => {
-        getData()
-    })
+        const intervalId = setInterval(() => {
+            getData()
+        }, 5000)
+        
+        return () => clearInterval(intervalId)
+    }, [props])
 
     return (
         <div className="stockpage-container">
