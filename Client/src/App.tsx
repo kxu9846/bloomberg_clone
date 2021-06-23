@@ -3,6 +3,7 @@ import {Route, Switch, Redirect} from 'react-router-dom'
 // import Navbar from './components/navbar/index'
 import QuickLinksBar from './components/quicklinksbar/QuickLinksBar'
 import Homepage from './Pages/Homepage/Homepage'
+import Stockpage from './Pages/Stockpage/Stockpage';
 // import { useQuery } from '@apollo/client';
 // import { FETCH_USERS } from './Graphql/Queries'
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <div>
       <Switch>
+      <Route path="/stock" component={Stockpage} />
         <Route path="/" component={Homepage} />
         <Redirect to = "/" />
       </Switch>
