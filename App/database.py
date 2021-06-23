@@ -26,7 +26,7 @@ def seed_ticker_symbols():
             name.save()
 
 def init_db():
-    seed_ticker_symbols()
+    # seed_ticker_symbols()
     # print(client.ticker.drop())
     pass
     # joe = User(username='joe', password='password', article_ids=[], ticker_ids=[])

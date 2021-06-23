@@ -49,7 +49,6 @@ class Mutation(graphene.Mutation):
             tickers = graphene.List(Ticker)   
             tickers.delete()
 
-
 schema = graphene.Schema(query=Query, mutation=Mutation)
 
 # res = schema.execute(
