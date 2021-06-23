@@ -1,5 +1,29 @@
 .financials {
+    font-family: 'Arial';
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 25%;
+}
+
+.companyName {
+}
+
+.companySymbol {
+    font-weight: bold;
+}
+
+.currentPrice {
+    font-size: 36pt;
+}
+
+.key-stats{
     display: flex;
     flex-direction: row;
-    border: 10px solid black;
+    justify-content: space-around;
+}
+
+.stat-title {
+    font-size: 10pt;
+    color: grey;
 }
