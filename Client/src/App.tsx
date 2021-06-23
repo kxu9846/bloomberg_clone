@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Switch>
-      <Route path="/stock" component={Stockpage} />
+        <Route path="/stock" component={Stockpage} />
         <Route path="/" component={Homepage} />
         <Redirect to = "/" />
       </Switch>
