@@ -8,3 +8,12 @@ export const FETCH_USERS = gql`
     }
   }
 `
+
+export const FETCH_TICKERS = gql`
+  {
+    tickers {
+      name,
+      symbol
+    }
+  }
+`

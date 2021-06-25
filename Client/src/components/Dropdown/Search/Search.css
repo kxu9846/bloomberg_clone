@@ -1,0 +1,26 @@
+.primary {
+    display: flex;
+    font-family: "Gill Sans", sans-serif;
+    flex-direction: column;
+    width: 30%;
+    color: white;
+    background-color: black;
+    margin-left: 5%;
+}
+
+
+.category {
+    height: 12%;
+    border-bottom: 1px solid grey;
+    height: 60pt;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-bar {
+    width: 90%;
+}
