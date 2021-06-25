@@ -6,6 +6,8 @@
 form input {
     background: black;
     color: grey;
+    border: none;
+    border-bottom: 1px solid grey;
     height:48px;
     width: 100%;
     font-size: 12pt;

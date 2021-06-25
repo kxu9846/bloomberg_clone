@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Button.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -11,11 +11,24 @@ interface props {
 function Button(props: props) {
     const { variant = "primary", children, icon, ...rest } = props
 
+    const [currentState, setCurrentState] = useState({
+        buttonClicked: false
+    })
+
+    const handleButtonClicked = () => {
+        setCurrentState({
+            buttonClicked: !currentState.buttonClicked
+        }
+        )
+    }
+
     return (
-        <button className = {`button ${variant}`} {...rest}>
-            {children}
-            <FontAwesomeIcon icon = {icon} />
-        </button>
+        <div className="button-container" onClick={handleButtonClicked}>
+            <button className = {`button ${variant}`} {...rest}>
+                {children}
+                <FontAwesomeIcon icon = {icon} />
+            </button>
+        </div>
     )
 }
 
