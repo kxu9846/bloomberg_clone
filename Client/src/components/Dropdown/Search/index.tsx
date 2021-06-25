@@ -4,6 +4,8 @@ import SearchBar from '../../SearchBar/index'
 import Button from '../../Button/index'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
+const STOCK_SYMBOLS = ["AAPL", "GME", "NFLX"]
+
 interface props {
     variant: string
 }
@@ -33,7 +35,15 @@ function Search(props: props) {
                             <Button variant="close" icon={faTimes} />
                         </div>
                     </div>
-                    <div className='category'>Companies and Quotes</div>
+                    <div className='category'>Companies and Quotes
+                        <div className='search-results'>
+                            {STOCK_SYMBOLS.map((stock:string) => {
+                                return (<div className="stock-symbol">
+                                    <Button variant="link-black-background" children={stock}/>
+                                </div>)
+                            })}
+                        </div>
+                    </div>
                 </div> : null
             }
         </div> 
