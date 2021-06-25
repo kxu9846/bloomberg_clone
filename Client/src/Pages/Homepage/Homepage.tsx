@@ -21,6 +21,10 @@ function Homepage() {
 
     return (
         <div className="homepage-container">
+            {currentState.searchButtonClicked ?
+                <div className= "search-dropdown">
+                    <Search variant="primary" />
+                </div> : null}
             <div className="main-navbar-header">
                 <div className="main-navbar-header-left">
                     <div>
@@ -36,10 +40,6 @@ function Homepage() {
                     <Button variant = "border" children = "Subscribe"/>
                 </div>
             </div>
-            {currentState.searchButtonClicked ?
-                <div>
-                    <Search variant="primary" />
-                </div> : null}
             <div className = "main-content-container">
                 <QuickLinksBar />
             </div>

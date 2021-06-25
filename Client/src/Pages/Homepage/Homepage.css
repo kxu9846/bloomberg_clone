@@ -30,3 +30,9 @@
     margin: 18px auto;
     width: 300px;
 }
+
+.search-dropdown {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+}

@@ -20,6 +20,7 @@ function SearchBar() {
                     type="text"
                     placeholder = {inputValue}
                     onChange={changeHandler}
+                    autoFocus
                 />
             </form>
         </div>
