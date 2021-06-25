@@ -12,6 +12,8 @@ form input {
     width: 100%;
     font-size: 12pt;
     font-weight: lighter;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 form input:focus {
