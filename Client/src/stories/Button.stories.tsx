@@ -60,6 +60,12 @@ LinkButton.args = {
     children: 'Sign In'
 }
 
+export const LinkeButtonBlackBackground = Template.bind({})
+LinkeButtonBlackBackground.args = {
+    variant: 'link-black-background',
+    children: 'black background link'
+}
+
 export const CloseButton = Template.bind({})
 CloseButton.args = {
     variant: 'close',
