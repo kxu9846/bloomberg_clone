@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 interface props {
     variant: string,
     text: string,
-    icon: any
+    icon?: any
 }
 
 export default function DropdownButton({variant, text, icon} : props) {

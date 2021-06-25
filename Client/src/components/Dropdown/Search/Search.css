@@ -1,14 +1,13 @@
-.search {
+.primary {
     display: flex;
     font-family: "Gill Sans", sans-serif;
     flex-direction: column;
     width: 30%;
-}
-
-.primary {
     color: white;
     background-color: black;
+    margin-left: 5%;
 }
+
 
 .category {
     height: 12%;
