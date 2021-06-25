@@ -13,3 +13,7 @@ form input {
     font-size: 12pt;
     font-weight: lighter;
 }
+
+form input:focus {
+    outline: none;
+}
