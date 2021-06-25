@@ -9,6 +9,10 @@ function SearchBar() {
         setInputValue(e.target.value)
     }
 
+    const getMatches = () => {
+        //should query db  using GraphQL to match inputValue and return a list of matching values
+    }
+
     return (
         <div className="search-bar">
             <form action="/" method="get">

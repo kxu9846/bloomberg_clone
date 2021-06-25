@@ -46,3 +46,15 @@
 .sign-in-link:hover {
     color: grey
 }
+
+.close {
+    background-color: black;
+    color: grey;
+    font-size: 24pt;
+    font-weight: lighter;
+    padding: 10px 20px;
+}
+
+.close:hover {
+    color: white;
+}
