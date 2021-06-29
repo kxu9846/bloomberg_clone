@@ -5,7 +5,6 @@ import os
 
 # from Models.models import User
 #  Article, Ticker, Images
-
 # DATABASE = "bloomberg_db"
 # PASSWORD = os.environ.get("MONGODB_PASSWORD")
 
