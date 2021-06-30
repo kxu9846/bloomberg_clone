@@ -1,27 +1,36 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import './Search.css'
 import SearchBar from '../../SearchBar/index'
 import Button from '../../Button/index'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import Stockpage from '../../../Pages/Stockpage/Stockpage'
 
 const STOCK_SYMBOLS = ["AAPL", "GME", "NFLX"]
 
 interface props {
     variant: string
+    history?: any
 }
 
 function Search(props: props) {
     const { variant = "primary", ...rest } = props
 
     const [currentState, setCurrentState] = useState({
-        closeButtonClicked: false
+        closeButtonClicked: false,
     })
+
+    // const history = useHistory()
 
     const handleCloseButtonClicked = () => {
         setCurrentState({
             closeButtonClicked: !currentState.closeButtonClicked
         })
     }
+
+    // const nextPath = (path:any) => {
+    //     history.push(path)
+    // }
 
     return (
         <div>
