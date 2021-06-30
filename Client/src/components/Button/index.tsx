@@ -6,6 +6,7 @@ interface props {
     variant: string
     children?: string
     icon?: any
+    onClick?: any
 }
 
 function Button(props: props) {
