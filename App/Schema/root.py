@@ -1,8 +1,8 @@
-from graphene import ObjectType, Field, Schema, ID, String
-from App.Schema.mutations import CreateUserMutation
-from App.Schema.Types.user import User as UserType
-from App.Models.user import User as UserModel
 import json
+from graphene import ObjectType, Field, Schema, ID, String
+from Schema.mutations import CreateUserMutation
+from Schema.Types.user import User as UserType
+from Models.user import User as UserModel
 from mongoengine import connect
 
 class Mutation(ObjectType):
@@ -50,5 +50,19 @@ getUserString = '''
         }
     }
 '''
+
+getNestedUserString = '''
+    query {
+        getUserByFirstName(firstName: "Hank") {
+            count
+            allPersons {
+            name
+            }
+        }
+    }
+'''
+
 res = schema.execute(getUserString)
 print(res.errors) if res.errors else print(json.dumps(res.data))
+
+

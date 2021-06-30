@@ -3,6 +3,13 @@ from jsonpath import jsonpath
 from mongoengine import connect
 import os
 
+
+# mongoengine methods database methods
+# drop_collection
+
+
+
+
 # from Models.models import User
 #  Article, Ticker, Images
 # DATABASE = "bloomberg_db"

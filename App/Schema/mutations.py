@@ -1,6 +1,6 @@
 from graphene import Mutation, String, Field, Boolean
-from App.Schema.Types.user import User as UserType, UserInput as UserInputType
-from App.Models.user import User as UserModel
+from Schema.Types.user import User as UserType, UserInput as UserInputType
+from Models.user import User as UserModel
 
 class CreateUserMutation(Mutation):
     class Arguments:
