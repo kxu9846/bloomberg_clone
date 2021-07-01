@@ -1,11 +1,19 @@
 import json
 import csv
-from jsonpath import jsonpath
 from mongoengine import connect
 import os
-
 from Models.user import User
 from Models.ticker import Ticker
+
+# mongoengine methods database methods
+# drop_collection
+
+
+# from Models.models import User
+#  Article, Ticker, Images
+# DATABASE = "bloomberg_db"
+# PASSWORD = os.environ.get("MONGODB_PASSWORD")
+
 
 DATABASE = "bloomberg_db"
 PASSWORD = os.environ.get("MONGODB_PASSWORD")
