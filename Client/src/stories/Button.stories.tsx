@@ -1,6 +1,7 @@
 import { Story} from '@storybook/react'
 import React from 'react'
 import Button from '../components/Button/index'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 export default {
     title: 'Button',
@@ -57,4 +58,16 @@ export const LinkButton = Template.bind({})
 LinkButton.args = {
     variant: 'link',
     children: 'Sign In'
+}
+
+export const LinkeButtonBlackBackground = Template.bind({})
+LinkeButtonBlackBackground.args = {
+    variant: 'link-black-background',
+    children: 'black background link'
+}
+
+export const CloseButton = Template.bind({})
+CloseButton.args = {
+    variant: 'close',
+    icon: faTimes
 }
