@@ -87,6 +87,9 @@ function Stockpage(props: props) {
                     </div>
                 </div>
             </div>
+            <div className ="stockpage-video">
+                <span>stock video goes here</span>
+            </div>
         </div>
     )
 }

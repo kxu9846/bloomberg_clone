@@ -4,7 +4,7 @@ import './Search.css'
 import SearchBar from '../../SearchBar/index'
 import Button from '../../Button/index'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
-import Stockpage from '../../../Pages/Stockpage/Stockpage'
+// import Stockpage from '../../../Pages/Stockpage/Stockpage'
 
 const STOCK_SYMBOLS = ["AAPL", "GME", "NFLX"]
 

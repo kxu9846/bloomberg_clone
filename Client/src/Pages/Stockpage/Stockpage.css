@@ -1,16 +1,23 @@
+.stockpage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
 .financials {
     font-family: 'Arial';
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    width: 25%;
-}
-
-.companyName {
+    width: 40%;
 }
 
 .companySymbol {
     font-weight: bold;
+    font: 16pt;
 }
 
 .currentPrice {
@@ -26,4 +33,14 @@
 .stat-title {
     font-size: 10pt;
     color: grey;
+}
+
+.stockpage-video {
+    background: palegreen;
+    height: 350px;
+    width: 40%;
+}
+
+.stockpage-video span {
+    
 }
