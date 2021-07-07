@@ -6,7 +6,7 @@ interface props {
     variant: string
     children?: string
     icon?: any
-    onClick?: any
+    onClick?: () => void
 }
 
 function Button(props: props) {
@@ -27,7 +27,8 @@ function Button(props: props) {
         <div className="button-container" onClick={handleButtonClicked}>
             <button className = {`button ${variant}`} {...rest}>
                 {children}
-                <FontAwesomeIcon icon = {icon} />
+                {icon? <FontAwesomeIcon icon = {icon} /> : null
+                }
             </button>
         </div>
     )
