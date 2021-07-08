@@ -1,0 +1,65 @@
+.modal-background-div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.699);
+}
+
+.modal-form-div {
+    background-color: rgb(221, 214, 214);
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border-radius: grey;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px grey solid;
+    -webkit-box-shadow: 0px 0px 44px 5px rgba(46,46,46,0.8); 
+    box-shadow: 0px 0px 44px 5px rgba(46,46,46,0.8);
+}
+
+.modal-form-inner-div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.modal-form-inner-div > .modal-form-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-form-fatimes {
+    position: fixed;
+    right: 1px;
+    top: 1px;
+    height: 52px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-form-fatimes:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+

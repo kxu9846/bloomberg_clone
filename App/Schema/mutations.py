@@ -9,7 +9,7 @@ class CreateUserMutation(Mutation):
     user = Field(UserType)
     ok = Boolean()
 
-    def mutate(root, info, user_data = None):
+    def mutate(parent, info, user_data = None):
         user = UserModel(
             first_name=user_data.first_name,
             last_name=user_data.last_name,

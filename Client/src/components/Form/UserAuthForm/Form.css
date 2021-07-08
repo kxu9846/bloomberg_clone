@@ -1,0 +1,69 @@
+.form {
+    font-size: 15px;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form > div > input {
+    font-size: 12px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px grey solid;
+    width: 93%;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    height: 34px;
+}
+
+.form > div > input:hover {
+    background-color: rgb(224, 216, 216);
+}
+
+.form > div > input:focus {
+    background-color: rgb(224, 216, 216);
+}
+
+.form > div > p {
+    text-decoration: underline;
+    white-space: nowrap;
+    font-size: 12px;
+    margin: 5px 0px;
+}
+
+.form > div > .user-auth-form-button {
+    font-size: 11px;
+    width: 100%;
+    padding: 10px 0px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 10px 0px;
+}
+
+.form > .underline-button-div {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.underline-button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: fit-content;
+    text-decoration: underline;
+    margin-left: 3px;
+    white-space: nowrap;
+}

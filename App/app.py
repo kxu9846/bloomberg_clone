@@ -15,5 +15,6 @@ app.add_url_rule(
 )
 
 if __name__ == '__main__':
+    # schema.execu
   # init_db()
   app.run()

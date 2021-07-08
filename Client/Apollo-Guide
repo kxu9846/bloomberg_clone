@@ -1,0 +1,52 @@
+useMemo -> Used to store frontend heavy computated results
+useState -> useState
+useContext -> Global State 
+useQuery -> only used to get data from API call --> called on component Mount, returns loading and data state
+useRef -> create reference to component so we can interact with its className / id, etc
+apollo-link-state -> possible replacement for global/local state management
+
+Authentication:
+REST vs graphQL
+Authenticating REST APIs is easier compared to graphQL as you can place authentication 
+on each endpoint/route you want to protect, but graphQL only has one endpoint
+
+useQuery, useMutation, polling, refetch 
+https://softchris.github.io/pages/graphql-apollo-client.html#mutation
+
+
+Optimistic UI:
+Removes Loaders/Spinners and replaces with whatever you desire
+* Read at bottom of article
+https://www.smashingmagazine.com/2020/07/client-side-graphql-apollo-client-react-apps/
+
+
+Apollo 3.0
+https://blog.logrocket.com/whats-new-in-apollo-client-3/
+
+
+
+Clearing Cache and Local Storage -> Logged Out
+onClick = {() => {
+    client.cache.evict({fieldName: "hank"})
+    client.cache.gc() // garbage collection
+    localStorage.clear()
+    isLoggedInVar(false) // sets reactive variable for logged In to false
+}}
+
+
+Triggering Rerender using useState/useMutation/reactive variables
+const cartItems = cartItemsVar()
+const isInCart = id ? cartItems.includes(id) : false
+const [, toggleTrip] = useState(isInCart)
+
+onClick = {() => {
+    if (id){
+        cartItemsVar(
+            // if isInCart contains id, filter it out, else add to cart 
+            isInCart ? cartItems.filter((i) => i !== id) : [...cartItems, id]
+        )
+        // toggle useState hook to rerender functional component
+        toggleTrip(!isInCart)
+    }
+}}
+
