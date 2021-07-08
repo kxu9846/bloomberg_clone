@@ -4,7 +4,7 @@ import './Search.css'
 import SearchBar from '../../SearchBar/index'
 import Button from '../../Button/index'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
-import Stockpage from '../../../Pages/Stockpage/Stockpage'
+// import Stockpage from '../../../Pages/Stockpage/Stockpage'
 
 const STOCK_SYMBOLS = ["AAPL", "GME", "NFLX"]
 
@@ -20,7 +20,7 @@ function Search(props: props) {
         closeButtonClicked: false,
     })
 
-    // const history = useHistory()
+    const history = useHistory()
 
     const handleCloseButtonClicked = () => {
         setCurrentState({
@@ -28,9 +28,9 @@ function Search(props: props) {
         })
     }
 
-    // const nextPath = (path:any) => {
-    //     history.push(path)
-    // }
+    const nextPath = (path:any) => {
+        history.push(path)
+    }
 
     return (
         <div>
@@ -47,8 +47,8 @@ function Search(props: props) {
                     <div className='category'>Companies and Quotes
                         <div className='search-results'>
                             {STOCK_SYMBOLS.map((stock:string) => {
-                                return (<div className="stock-symbol">
-                                    <Button variant="link-black-background" children={stock}/>
+                                return (<div className="stock-symbol" key={stock}>
+                                    <Button variant="link-black-background" children={stock} onClick={() =>nextPath(stock)}/>
                                 </div>)
                             })}
                         </div>

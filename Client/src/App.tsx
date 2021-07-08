@@ -1,5 +1,6 @@
 import React from 'react';
-import {Route, Switch, Redirect} from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 // import Navbar from './components/navbar/index'
 import Homepage from './Pages/Homepage/Homepage'
 import Stockpage from './Pages/Stockpage/Stockpage';
@@ -12,6 +13,7 @@ function App() {
   // if (error) return `Error! ${error.message}`
 
   // let users = !data ? null : data.users
+  // const history = useHistory()
   return (
     <div>
       <Switch>

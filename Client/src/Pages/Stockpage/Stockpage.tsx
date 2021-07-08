@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import './Stockpage.css'
 import axios from 'axios'
-
-const SYMBOL = "AAPL"
-const TOKEN = "Tpk_ebd4f6717994459ca8761830bd54e946"
-const API_URL = `https://sandbox.iexapis.com/stable/stock/${SYMBOL}/quote/?token=${TOKEN}`
+import { TOKEN } from '../../token'
 
 interface props {
-    symbol : string
+    symbol: string,
+    match: any,
+    path: string
+    
 }
 
 function Stockpage(props: props) {
@@ -22,6 +22,10 @@ function Stockpage(props: props) {
             marketCap: 0,
         }
     )
+
+    const SYMBOL = props.match.path.slice(1).toUpperCase()
+    const API_URL = `https://sandbox.iexapis.com/stable/stock/${SYMBOL}/quote/?token=${TOKEN}`
+
 
     const getData = async () => {
         let result = await axios.get(API_URL)
@@ -38,7 +42,7 @@ function Stockpage(props: props) {
                 })
             })
             .catch(err => {
-            console.log(err)
+                console.log(err)
         }
         )
         return result
@@ -82,6 +86,9 @@ function Stockpage(props: props) {
                         {financials.marketCap}
                     </div>
                 </div>
+            </div>
+            <div className ="stockpage-video">
+                <span>stock video goes here</span>
             </div>
         </div>
     )
